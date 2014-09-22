@@ -1,7 +1,20 @@
-var i = 1;
+var i = prompt('Please enter a number').value;
+
+function checkInput(i) {
+    if (isNaN(i)) { 
+        alert('You must enter a number!');
+        return false;
+    } else {
+        fizzBuzz();
+    }
+}
+checkInput();
+
+
+
 
 var fizzBuzz = function () {
-    for (i = 1; i <= 100; i++) {
+    for (i; i >= 1; i--) {
         if (i % 3 === 0 && i % 5 === 0) {
             $('body').append("<p>Fizz Buzz</p>");
             console.log("Fizz Buzz");
@@ -17,5 +30,3 @@ var fizzBuzz = function () {
         }
     }
 };
-
-fizzBuzz();
