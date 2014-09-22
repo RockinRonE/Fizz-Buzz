@@ -1,3 +1,16 @@
+var i = prompt('Please enter a number');
+
+function checkInput(i) {
+    
+    if (isNaN(i)) { 
+        alert('You must enter a number!');
+        return false;
+    }
+}
+checkInput();
+
+
+
 var i = 1;
 
 var fizzBuzz = function () {
